@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mol-8H-v9v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byU-Ee-jzC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDR-HA-gfV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="820.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwl-Xn-kia">
+                                                <rect key="frame" x="0.0" y="800" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="cwl-Xn-kia" firstAttribute="top" secondItem="KDR-HA-gfV" secondAttribute="top" constant="800" id="A8K-vi-DfR"/>
+                                            <constraint firstAttribute="bottom" secondItem="cwl-Xn-kia" secondAttribute="bottom" id="Iub-bE-NM9"/>
+                                            <constraint firstItem="cwl-Xn-kia" firstAttribute="leading" secondItem="KDR-HA-gfV" secondAttribute="leading" id="a6S-CE-kmU"/>
+                                            <constraint firstAttribute="trailing" secondItem="cwl-Xn-kia" secondAttribute="trailing" id="lwN-Tc-e2m"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KDR-HA-gfV" firstAttribute="height" secondItem="byU-Ee-jzC" secondAttribute="height" priority="250" id="RHG-Gw-A4K"/>
+                                    <constraint firstItem="KDR-HA-gfV" firstAttribute="leading" secondItem="byU-Ee-jzC" secondAttribute="leading" id="SQ7-SC-egO"/>
+                                    <constraint firstItem="KDR-HA-gfV" firstAttribute="top" secondItem="byU-Ee-jzC" secondAttribute="top" id="YTr-Tm-KGv"/>
+                                    <constraint firstAttribute="trailing" secondItem="KDR-HA-gfV" secondAttribute="trailing" id="aK5-Ye-MnW"/>
+                                    <constraint firstAttribute="bottom" secondItem="KDR-HA-gfV" secondAttribute="bottom" id="oLe-Zv-y1f"/>
+                                    <constraint firstItem="KDR-HA-gfV" firstAttribute="width" secondItem="byU-Ee-jzC" secondAttribute="width" id="vnN-l3-a7u"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="byU-Ee-jzC" firstAttribute="leading" secondItem="b6g-83-zrN" secondAttribute="leading" id="UKn-mM-6K8"/>
+                            <constraint firstAttribute="bottom" secondItem="byU-Ee-jzC" secondAttribute="bottom" id="Xv6-dG-wFc"/>
+                            <constraint firstItem="byU-Ee-jzC" firstAttribute="trailing" secondItem="b6g-83-zrN" secondAttribute="trailing" id="o6b-0N-lfF"/>
+                            <constraint firstItem="byU-Ee-jzC" firstAttribute="top" secondItem="Mol-8H-v9v" secondAttribute="top" id="qIh-h5-LNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b6g-83-zrN"/>
+                    </view>
+                    <connections>
+                        <outlet property="banana" destination="cwl-Xn-kia" id="oTG-PB-6g8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
